@@ -7,11 +7,6 @@ import { getAuth } from '@clerk/nextjs/server';
 import CodeReview from '../../../db/models/CodeReview';
 import { connectToMongoDB } from '@/lib/mongodb';
 
-
-// const openai= new OpenAI({
-//     apiKey: "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"
-// })
-
 const GEIMINI_API = process.env.GEMINI_API || ''
 const genAI = new GoogleGenerativeAI(GEIMINI_API);
 
