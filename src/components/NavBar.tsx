@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
 
 export function NavbarDemo() {
   return (
@@ -29,9 +30,14 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
         {/* <MenuItem setActive={setActive} active={active} item='aa'>
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            
+
           </div>
         </MenuItem> */}
+        <div className="flex justify-between gap-4 text-xs items-center">
+          <Link href="sss">Reviews</Link>
+          <Link href="#pricing">Pricing</Link>
+          <Link href="#contact">Contact</Link>
+        </div>
          <SignedOut>
               <SignInButton />
         </SignedOut>

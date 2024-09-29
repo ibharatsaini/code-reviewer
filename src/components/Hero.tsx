@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "../components/ui/hero-highlight";
+import { HeroButton } from "./HeroButton";
 
 export function HeroHighlightDemo() {
   return (
@@ -18,13 +19,25 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+        className="text-2xl px-4 pt-20 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
         Supercharge your code reviews with AI-powered insights {" "}
         <Highlight className="text-black dark:text-white">
         for faster, smarter development.
+
         </Highlight>
+        
       </motion.h1>
+      <motion.h4 className="text-center mt-6 text-sm text-slate-500	">
+      Instant AI insights to catch bugs, improve quality, and streamline your coding process.
+      </motion.h4>
+      {/* <div className="flex justify-center items-center gap-6"> */}
+      <HeroButton text="Get Started" />
+      {/* <HeroButton /> */}
+
+
+      {/* </div> */}
+
     </HeroHighlight>
   );
 }

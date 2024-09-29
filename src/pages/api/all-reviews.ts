@@ -1,8 +1,5 @@
 // pages/api/review.js
-import { NextApiRequest, NextApiResponse } from "next";import OpenAI from "openai";
-
-import { LanguageServiceClient } from "@google-cloud/language";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { NextApiRequest, NextApiResponse } from "next";
 import { getAuth } from "@clerk/nextjs/server";
 import CodeReview from "../../../db/models/CodeReview";
 import { connectToMongoDB } from "@/lib/mongodb";
