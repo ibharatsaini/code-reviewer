@@ -54,7 +54,7 @@ export function SidebarDemo() {
               {
                 title && title.map((value: any,index)=>{
                   return <>
-                  <h2 className="rounded-sm cursor-pointer bg-gray-100 p-1 truncate border-box text-xs h-6" key={value._id}>{value.title}</h2>
+                  <h2 className="rounded-sm cursor-pointer bg-gray-100 p-1 truncate border-box text-sm h-6" key={value._id}>{value.title}</h2>
                   </>
                 })
               }

@@ -17,7 +17,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed w-full top-10 inset-x-0 mx-auto z-50 px-10", className)}
+      className={cn("fixed w-full top-10 text-lg inset-x-0 mx-auto z-50 px-10", className)}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="codeiq">
@@ -33,8 +33,8 @@ function Navbar({ className }: { className?: string }) {
 
           </div>
         </MenuItem> */}
-        <div className="flex justify-between gap-4 text-xs items-center">
-          <Link href="sss">Reviews</Link>
+        <div className="flex justify-between gap-4 text-sm items-center">
+          <Link href="/review">Reviews</Link>
           <Link href="#pricing">Pricing</Link>
           <Link href="#contact">Contact</Link>
         </div>

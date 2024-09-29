@@ -5,7 +5,7 @@ import Image from "next/image";
 import ReivewImage from '@/app/images/review.jpg'
 export function ImageScroll() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-40">
       <ContainerScroll
         titleComponent={
           <>

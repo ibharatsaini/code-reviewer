@@ -21,9 +21,9 @@ export function HeroButton({text,className}:{text:string,className?:string}) {
   return (
     // <div className="flex justify-center text-center">
       <HoverBorderGradient
-        containerClassName="rounded-full m-auto mt-10 px-3 py-1"
+        containerClassName="rounded-full m-auto mt-10 px-4 py-1"
         as="button"
-        className={`${`bg-black text-white text-xs flex items-center space-x-2 ${className}`}`}
+        className={`${`bg-black text-white text-sm flex items-center space-x-2 ${className}`}`}
         onClick={()=>handleClick()}
       >
         <span>{text}</span>
