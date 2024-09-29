@@ -20,7 +20,7 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed w-full top-10 inset-x-0 mx-auto z-50 px-10", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="acceternity">
+        <MenuItem setActive={setActive} active={active} item="codeiq">
           {/* <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
             <HoveredLink href="/interface-design">Interface Design</HoveredLink>
