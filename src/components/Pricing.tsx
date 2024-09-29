@@ -142,8 +142,8 @@ const Feature = ({features}:{features:string[]}) => {
   return (
     <>
     {
-     features &&  features.map((el)=> (
-          <div className="flex items-start justify-start gap-2 my-4">
+     features &&  features.map((el,index)=> (
+          <div key={index} className="flex items-start justify-start gap-2 my-4">
               <div className="h-4 w-4 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-neutral-700">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
