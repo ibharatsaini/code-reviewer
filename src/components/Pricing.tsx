@@ -152,9 +152,9 @@ const Feature = ({features}:{features:string[]}) => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="h-3 w-3 [stroke-width:4px] text-neutral-300"
                 >
                   <path d="M5 12l5 5l10 -10"></path>

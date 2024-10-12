@@ -10,6 +10,7 @@ const GEIMINI_API = process.env.GEMINI_API || "";
 const genAI = new GoogleGenerativeAI(GEIMINI_API);
 
 const reviewCode = async (req: NextApiRequest, res: NextApiResponse) => {
+  console.log(`Review code functio called`)
   await connectToMongoDB();
   if (req.method !== "POST")
     res.status(405).json({ err: `Method not allowed ` });
