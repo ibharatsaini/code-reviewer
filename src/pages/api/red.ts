@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const redirector=  (req:NextRequest , res:NextResponse) => {
-    return NextResponse.redirect(new URL('http://169.254.169.254/latest/meta-data/'))
+    return NextResponse.redirect(new URL('http://localhost:3000'))
 }
 
 export const runtime = 'edge'
