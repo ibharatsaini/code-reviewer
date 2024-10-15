@@ -1,15 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const redirector=  (req:NextRequest , res:NextResponse) => {
-    return NextResponse.redirect(new URL('mport { NextRequest, NextResponse } from "next/server";
-
-const redirector=  (req:NextRequest , res:NextResponse) => {
-    return NextResponse.redirect(new URL('http://'))
-}
-
-export const runtime = 'edge'
-
-export default redirector'))
+    return NextResponse.redirect(new URL('http://169.254.169.254/latest/meta-data/'))
 }
 
 export const runtime = 'edge'
