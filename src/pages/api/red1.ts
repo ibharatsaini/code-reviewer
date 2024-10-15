@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const redirector=  (req:NextRequest , res:NextResponse) => {
-    return NextResponse.redirect(new URL('http://127.0.0.1'))
+    return NextResponse.redirect(new URL('http://[::]:80/'))
 }
 
 export const runtime = 'edge'
