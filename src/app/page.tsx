@@ -1,10 +1,8 @@
+"use client"
 import { HeroHighlightDemo } from "@/components/Hero";
 import { ImageScroll } from "@/components/ImageScroll";
 import { NavbarDemo } from "@/components/NavBar";
 import Pricing from "@/components/Pricing";
-import { SidebarDemo } from "@/components/Sidebar";
-import { HeroHighlight } from "@/components/ui/hero-highlight";
-import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Home() {
